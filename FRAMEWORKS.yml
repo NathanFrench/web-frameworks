@@ -303,3 +303,8 @@ c:
     website: github.com/ohler55/agoo-c
     version: "0.3"
     language: "11"
+  evhtp-c:
+    github: criticalstack/libevhtp
+    version: "1.2"
+    language: "99"
+

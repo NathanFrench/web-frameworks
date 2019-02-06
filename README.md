@@ -282,3 +282,73 @@ Any kind of idea is :heart:
 - [Taichiro Suzuki](https://github.com/tbrand) - Author, maintainer
 - [OvermindDL1](https://github.com/OvermindDL1) - Maintainer
 - [Marwan Rabbâa](https://github.com/waghanza) - Mainainer
+
+
+# EVHTP UPDATES 
+
+Last update: 2019-02-06
+```
+OS: Linux (version: 4.15.0-45-generic, arch: x86_64)
+CPU Cores: 24
+threads: 25, connections: 1000
+```
+Benchmark running ...
+Done. <- evhtp
+Done. <- kore
+Done. <- agoo-c
+Done. <- evhtp-c
+
+### Latency
+
+
+#### Ranking (top 5)
+
+
+:one: evhtp-c (c)
+
+
+:two: agoo-c (c)
+
+
+:three: evhtp (cpp)
+
+
+:four: kore (c)
+
+
+#### Full table
+
+| Language (Runtime) | Framework (Middleware) | Average | 50th percentile | 90th percentile | 99th percentile | 99.9th percentile | Standard deviation |
+|---------------------------|---------------------------|----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|
+| c (99) | [evhtp-c](http://github.com/criticalstack/libevhtp) (1.2) | 1.88 ms | 1.19 ms | 3.73 ms | 7.19 ms | 130.04 ms | 4421.33 |
+| c (11) | [agoo-c](http://github.com/ohler55/agoo-c) (0.3) | 1.77 ms | 1.27 ms | 3.36 ms | 5.49 ms | 83.10 ms | 1632.33 |
+| cpp (11.0) | [evhtp](http://github.com/criticalstack/libevhtp) (1.2) | 2.26 ms | 1.45 ms | 4.81 ms | 14.24 ms | 35.52 ms | 2771.67 |
+| c (99) | [kore](http://kore.io) (3.1) | 4.40 ms | 4.38 ms | 7.42 ms | 8.60 ms | 52.17 ms | 2259.00 |
+
+### Requests per seconds
+
+
+#### Ranking (top 5)
+
+
+:one: (evhtp-c) (c)
+
+
+:two: (agoo-c) (c)
+
+
+:three: (evhtp) (cpp)
+
+
+:four: (kore) (c)
+
+
+#### Full table
+
+| Language (Runtime) | Framework (Middleware) | Requests / s | Throughput |
+|---------------------------|---------------------------|----------------:|---------:|
+| c (99) | [evhtp-c](http://github.com/criticalstack/libevhtp) (1.2) | 635893.33 | 617.59 MB |
+| c (11) | [agoo-c](http://github.com/ohler55/agoo-c) (0.3) | 604783.67 | 349.59 MB |
+| cpp (11.0) | [evhtp](http://github.com/criticalstack/libevhtp) (1.2) | 569349.67 | 550.07 MB |
+| c (99) | [kore](http://kore.io) (3.1) | 66696.67 | 181.28 MB |
+

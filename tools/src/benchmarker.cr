@@ -204,7 +204,7 @@ emojis << "four"
 emojis << "five"
 
 targets.each do |target|
-  cid = `docker run -td #{target.name}`.strip
+    cid = `docker run -td #{target.name}`.strip
 
   sleep 20 # due to external program usage
 

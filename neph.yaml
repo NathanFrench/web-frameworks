@@ -132,6 +132,7 @@ c:
   depends_on:
     - kore
     - agoo-c
+    - evhtp-c
 
 router.cr:
   commands:
@@ -432,6 +433,11 @@ evhtp:
   commands:
     - docker build -t evhtp .
   dir: cpp/evhtp
+
+evhtp-c:
+  commands:
+    - docker build -t evhtp-c .
+  dir: c/evhtp
 
 akkahttp:
   commands:
